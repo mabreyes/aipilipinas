@@ -1,0 +1,163 @@
+/* #E65100 */
+
+
+/* &#xe080; */
+
+body {
+    overflow-x: hidden;
+    background: #b61924;
+}
+
+html {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+.na-wrapper {
+    width: 95%;
+    margin: auto;
+}
+
+@media screen and (min-width: 420px) {
+    .na-wrapper {
+        width: 80%;
+    }
+}
+
+.na-nav {
+    background-color: #b61924;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.na-nav .navbar-brand {
+    font-family: "Circular-Pro-Bold", Helvetica, sans-serif;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.nav-item a {
+    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    color: #fff;
+}
+
+.nav-item a:visited {
+    color: #fff;
+}
+
+.nav-item a:hover {
+    text-decoration: none;
+}
+
+.na-jumbo {
+    color: #fff;
+    background-color: #b61924;
+}
+
+.na-jumbo .content {
+    margin: auto;
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+}
+
+.na-jumbo .content .menu .logo {
+    font-size: 3rem;
+}
+
+.na-jumbo .content .menu ul {
+    font-size: 1.5rem;
+    list-style: none;
+}
+
+@media screen and (min-width: 420px) {
+    .na-jumbo .content {
+        width: 90%;
+    }
+}
+
+.na-horiz-block .left {
+    text-align: right;
+}
+
+.na-verti-block i {
+    color: #b61924;
+}
+
+.na-block-right-div {
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #fff;
+}
+
+@media all and (max-width: 575px) {
+    .na-block-right-div {
+        border: 0;
+    }
+}
+
+.na-story-ul {
+    list-style: none;
+}
+
+.na-story-ul li {
+    padding-left: 1.5rem;
+    margin-bottom: 0.5em;
+}
+
+.na-story-ul li:before {
+    content: "\f054";
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.5rem;
+    width: 1.5rem;
+}
+
+.na-clearfix {
+    overflow: auto;
+}
+
+#gform #email-invalid {
+    display: block;
+    /* vertical-align: bottom; */
+    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    margin: 5px;
+    height: auto;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    background-color: #b61924;
+    color: #fff;
+    -webkit-box-shadow: 0px 15px 51px 2px rgba(0, 0, 0, 0.34);
+    -moz-box-shadow: 0px 15px 51px 2px rgba(0, 0, 0, 0.34);
+    box-shadow: 0px 15px 51px 2px rgba(0, 0, 0, 0.34);
+}
+
+#gform #thankyou_message {
+    display: block;
+    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    /* vertical-align: bottom; */
+    margin: 5px;
+    height: auto;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    background-color: #339966;
+    color: #fff;
+    -webkit-box-shadow: 0px 15px 51px 2px rgba(0, 0, 0, 0.34);
+    -moz-box-shadow: 0px 15px 51px 2px rgba(0, 0, 0, 0.34);
+    box-shadow: 0px 15px 51px 2px rgba(0, 0, 0, 0.34);
+}

@@ -1,0 +1,624 @@
+@import url('flickity.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-override {
+    background: #b61924;
+    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+}
+
+.contact-nav-btn {
+    border: 1px #fff solid;
+    border-radius: 0.3rem;
+}
+
+.navbar-brand {
+    background: url('../assets/img/logo.png');
+    background-size: cover;
+    width: 94px;
+    height: 25px;
+}
+
+.navbar-brand span{
+    display: none;
+}
+
+.home {
+    background: #b61924;
+    background-image: url('../assets/img/home.png');
+    background-position: center;
+    height: 736px;
+}
+
+.home h1 {
+    font-size: 5em;
+    color: #fff;
+    font-family: "Circular-Pro-Bold", Helvetica, sans-serif;
+    line-height: 1.1em;
+    letter-spacing: -3px;
+    padding: 2.2em 0 0 0;
+}
+
+.home a.btn {
+    padding: 0.75em;
+    background: transparent;
+    border: 2px #fff solid;
+    color: #fff;
+    border-radius: 0.3rem;
+    font-size: 1.3rem;
+    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.story h1 {
+    font-family: "Circular-Pro-Bold", Helvetica, sans-serif;
+    margin: 0 0 15px 0;
+    font-size: 5em;
+    letter-spacing: -3px;
+    line-height: 1.1em;
+}
+
+.story h4 {
+    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+.story a.btn {
+    padding: 0.75em;
+    background: transparent;
+    border: 2px #fff solid;
+    color: #fff;
+    border-radius: 0.3rem;
+    font-size: 1.3rem;
+    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.section-title {
+    color: #f04730;
+    font-family: "Circular-Pro-Bold", Helvetica, sans-serif;
+    font-size: 4em;
+    letter-spacing: -2px;
+    line-height: 1em;
+    padding-top: 1.5em;
+}
+
+.section-title-div {
+    margin: 10px 0 10px 0;
+    width: 40px;
+    border-bottom: 10px #212121 solid;
+}
+
+.section-subtitle {
+    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    font-size: 1.5em;
+    line-height: 1.25em;
+}
+
+.about {
+    background-color: #e0e0e0;
+    background-image: url('../assets/img/about.png');
+    background-size: cover;
+    background-position: center;
+    height: 675px;
+}
+
+.about .section-title {
+    color: #b61924;
+    font-family: "Circular-Pro-Bold", Helvetica, sans-serif;
+    font-size: 4em;
+    letter-spacing: -2px;
+    line-height: 1em;
+    padding-top: 1.5em;
+}
+
+.about .section-title-div {
+    margin: 10px 0 10px 0;
+    width: 40px;
+    border-bottom: 10px #b61924 solid;
+}
+
+.about .section-subtitle {
+    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    font-size: 1.5em;
+    line-height: 1.25em;
+}
+
+.benefit {
+    background-color: #5e6161;
+    background-size: cover;
+    background-position: center;
+    height: 750px;
+}
+
+.benefit .section-title {
+    color: #fff;
+    font-family: "Circular-Pro-Bold", Helvetica, sans-serif;
+    font-size: 4em;
+    letter-spacing: -2px;
+    line-height: 1em;
+    padding-top: 1.5em;
+}
+
+.benefit .section-title-div {
+    margin: 10px 0 10px 0;
+    width: 40px;
+    border-bottom: 10px #fff solid;
+}
+
+.benefit .section-subtitle {
+    color: #fff;
+    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    font-size: 1.5em;
+    line-height: 1.25em;
+}
+
+.benefit .carousel {
+    margin-top: 80px;
+    width: 100%;
+}
+
+.benefit .carousel-cell {
+    width: 320px;
+    height: 360px;
+    margin-right: 50px;
+    background: #fff;
+    padding: 2em;
+    border-radius: 5px;
+    counter-increment: gallery-cell;
+    margin-bottom: 60px;
+    -webkit-box-shadow: 0px 15px 51px 2px rgba(0, 0, 0, 0.34);
+    -moz-box-shadow: 0px 15px 51px 2px rgba(0, 0, 0, 0.34);
+    box-shadow: 0px 15px 51px 2px rgba(0, 0, 0, 0.34);
+}
+
+.benefit .carousel-cell h2 {
+    font-family: "Circular-Pro-Bold", Helvetica, sans-serif;
+    color: #b61924;
+    font-size: 3em;
+    letter-spacing: -2px;
+}
+
+.benefit .carousel-cell p {
+    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    font-size: 1.5em;
+    line-height: 1em;
+    margin-top: -8px;
+}
+
+.benefit .carousel-cell.is-selected {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: none;
+    filter: none;
+}
+
+.benefit .flickity-page-dots {
+    display: none;
+}
+
+.education {
+    background-color: #e0e0e0;
+    background-size: cover;
+    background-position: center;
+    height: 675px;
+}
+
+.education .section-title {
+    color: #b61924;
+    font-family: "Circular-Pro-Bold", Helvetica, sans-serif;
+    font-size: 4em;
+    letter-spacing: -2px;
+    line-height: 1em;
+    padding-top: 1.5em;
+}
+
+.education .section-title-div {
+    margin: 10px 0 10px 0;
+    width: 40px;
+    border-bottom: 10px #b61924 solid;
+}
+
+.education .section-subtitle {
+    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    font-size: 1.5em;
+    line-height: 1.25em;
+}
+
+.education .na-block-right-div {
+    border: 0;
+}
+
+.education .explainer {
+    display: block;
+    vertical-align: bottom;
+    margin: 5px;
+    height: auto;
+    border-radius: 0.3rem;
+    padding: 2em;
+    -webkit-box-shadow: 0px 15px 51px 2px rgba(0, 0, 0, 0.34);
+    -moz-box-shadow: 0px 15px 51px 2px rgba(0, 0, 0, 0.34);
+    box-shadow: 0px 15px 51px 2px rgba(0, 0, 0, 0.34);
+}
+
+.education .explainer h2 {
+    color: #212121;
+    font-family: "Circular-Pro-Bold", Helvetica, sans-serif;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+
+.education .explainer p {
+    color: #212121;
+    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.5em;
+}
+
+.consultancy {
+    background-color: #b61924;
+    color: #fff;
+    height: 600px;
+}
+
+.consultancy .section-title {
+    color: #fff;
+    font-family: "Circular-Pro-Bold", Helvetica, sans-serif;
+    font-size: 4em;
+    letter-spacing: -2px;
+    line-height: 1em;
+    padding-top: 1.5em;
+}
+
+.consultancy .section-title-div {
+    margin: 10px 0 10px 0;
+    width: 40px;
+    border-bottom: 10px #fff solid;
+}
+
+.consultancy .section-subtitle {
+    color: #fff;
+    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    font-size: 1.5em;
+    line-height: 1.25em;
+}
+
+.consultancy h4 {
+    font-family: "Circular-Pro-Bold", Helvetica, sans-serif;
+}
+
+.consultancy p {
+    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.5em;
+}
+
+.consultancy .icon {
+    font-size: 4em;
+    margin: 0 0 10px 0;
+}
+
+.contact {
+    background-color: #e0e0e0;
+    height: 675px;
+}
+
+.contact .section-title {
+    color: #b61924;
+    font-family: "Circular-Pro-Bold", Helvetica, sans-serif;
+    font-size: 4em;
+    letter-spacing: -2px;
+    line-height: 1em;
+    padding-top: 1.5em;
+}
+
+.contact .section-title-div {
+    margin: 10px 0 10px 0;
+    width: 40px;
+    border-bottom: 10px #b61924 solid;
+}
+
+.contact .section-subtitle {
+    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    font-size: 1.5em;
+    line-height: 1.25em;
+}
+
+.contact input,
+.contact textarea {
+    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    color: #b61924;
+    font-size: 1.2rem;
+    padding: 1em;
+    background: transparent;
+    border: 2px #b61924 solid;
+}
+
+.contact input::-webkit-input-placeholder,
+.contact textarea::-webkit-input-placeholder {
+    color: #b61924;
+}
+
+.contact input::-moz-placeholder,
+.contact textarea::-moz-placeholder {
+    color: #b61924;
+}
+
+.contact input:-ms-input-placeholder,
+.contact textarea:-ms-input-placeholder {
+    color: #b61924;
+}
+
+.contact input:-moz-placeholder,
+.contact textarea:-moz-placeholder {
+    color: #b61924;
+}
+
+.contact input:focus,
+.contact textarea:focus,
+.uneditable-input:focus {
+    background: transparent;
+    border: 2px #b61924 solid;
+}
+
+.contact .btn,
+.contact .btn:hover {
+    padding: 0.75em;
+    background: #b61924;
+    border: 2px #b61924 solid;
+    margin-top: 10px;
+    color: #fff;
+    border-radius: 0.3rem;
+    font-size: 1.3rem;
+    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+footer {
+    padding: 100px 0 20px 0;
+    background: #e0e0e0;
+    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    bottom: 0;
+    text-align: center;
+}
+
+@media all and (max-width: 1920px) {
+    .na-jumbo .content {
+        margin: auto;
+        height: 500px;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        overflow-x: hidden;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .na-jumbo .content {
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        overflow-x: hidden;
+    }
+    .home h1 {
+        font-size: 4.5em;
+    }
+    .home a.btn {
+        padding: 0.7em;
+        font-size: 1.1rem;
+    }
+    .about .section-title {
+        font-size: 3.5em;
+        letter-spacing: -2px;
+    }
+    .about .section-subtitle {
+        font-size: 1.25em;
+        line-height: 1.25em;
+    }
+    .benefit .section-title {
+        font-size: 3.5em;
+        letter-spacing: -2px;
+    }
+    .benefit .section-subtitle {
+        font-size: 1.25em;
+        line-height: 1.25em;
+    }
+    .benefit {
+        height: 650px;
+    }
+    .benefit .carousel {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .education .section-title {
+        font-size: 3.5em;
+        letter-spacing: -2px;
+    }
+    .education .section-subtitle {
+        font-size: 1.25em;
+        line-height: 1.25em;
+    }
+    .consultancy .section-title {
+        font-size: 3.5em;
+        letter-spacing: -2px;
+    }
+    .consultancy .section-subtitle {
+        font-size: 1.25em;
+        line-height: 1.25em;
+    }
+    .contact .section-title {
+        font-size: 3.5em;
+        letter-spacing: -2px;
+    }
+    .contact .section-subtitle {
+        font-size: 1.25em;
+        line-height: 1.25em;
+    }
+}
+
+@media all and (max-width: 960px) {
+    .home {
+        height: 600px;
+    }
+    .home h1 {
+        font-size: 4em;
+    }
+    .home a.btn {
+        padding: 0.6em;
+        font-size: 1rem;
+    }
+    .na-jumbo {
+        height: 500px !important;
+    }
+    .consultancy {
+        height: 700px;
+    }
+}
+
+@media all and (max-width: 760px) {
+    .home a.btn {
+        padding: 0.6em;
+        font-size: 1rem;
+    }
+    .na-jumbo {
+        height: 500px !important;
+    }
+    .about {
+        background-position: center;
+        height: 500px;
+    }
+    .benefit {
+        height: 700px;
+    }
+    .benefit .carousel {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .education {
+        padding-bottom: 80px;
+        height: auto;
+    }
+    .consultancy {
+        height: 800px;
+    }
+}
+
+@media all and (max-width: 670px) {
+    .home {
+        height: 600px;
+    }
+    .home h1 {
+        font-size: 3.5em;
+        letter-spacing: -2px;
+    }
+    .about .section-subtitle {
+        font-size: 1.1em;
+        line-height: 1.25em;
+    }
+    .benefit .section-subtitle {
+        font-size: 1.1em;
+        line-height: 1.25em;
+    }
+    .benefit .carousel-cell h2 {
+        font-family: "Circular-Pro-Bold", Helvetica, sans-serif;
+        font-size: 2.5em;
+    }
+    .benefit .carousel-cell p {
+        font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+        font-size: 1.1em;
+        line-height: 1em;
+        margin-top: -8px;
+    }
+    .education .section-subtitle {
+        font-size: 1.1em;
+        line-height: 1.25em;
+    }
+    .consultancy {
+        height: 900px;
+    }
+    .consultancy .section-subtitle {
+        font-size: 1.1em;
+        line-height: 1.25em;
+    }
+    .contact .section-subtitle {
+        font-size: 1.1em;
+        line-height: 1.25em;
+    }
+}
+
+@media all and (max-width: 575px) {
+    .home {
+        height: 600px;
+    }
+    .home h1 {
+        font-size: 3em;
+        letter-spacing: -1px;
+    }
+    .about .section-title {
+        font-size: 2.5em;
+        letter-spacing: -2px;
+    }
+    .benefit {
+        height: 620px;
+    }
+    .benefit .section-title {
+        font-size: 2.5em;
+        letter-spacing: -2px;
+    }
+    .education .section-title {
+        font-size: 2.5em;
+        letter-spacing: -2px;
+    }
+    .consultancy {
+        height: 1090px;
+    }
+    .consultancy .section-title {
+        font-size: 2.5em;
+        letter-spacing: -2px;
+    }
+
+    .contact .section-title {
+        font-size: 2.5em;
+        letter-spacing: -2px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .contact-nav-btn {
+        padding: 0.4em;
+    }
+    .contact-nav-btn a {
+        font-size: 14px;
+    }
+    .home {
+        height: 500px;
+    }
+    .home h1 {
+        font-size: 2.5em;
+    }
+    .na-jumbo .content {
+        width: 260px;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        overflow-x: hidden;
+    }
+    .consultancy {
+        height: 1190px;
+    }
+
+    footer {
+        padding: 200px 0 20px 0;
+        background: #e0e0e0;
+        font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+        bottom: 0;
+        text-align: center;
+    }
+}
