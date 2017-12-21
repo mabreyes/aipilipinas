@@ -101,9 +101,10 @@
 
 .about {
     background-color: #e0e0e0;
-    background-image: url('../assets/img/about.png');
+    background-image: url('../assets/img/about.svg');
     background-size: cover;
-    background-position: center;
+    background-position: bottom center;
+    background-repeat: no-repeat;
     height: 675px;
 }
 
