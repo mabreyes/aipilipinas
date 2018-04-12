@@ -18,9 +18,11 @@
 
 .navbar-brand {
     background: url('../assets/img/logo.png');
-    background-size: cover;
-    width: 94px;
-    height: 25px;
+    background-size: contain;
+    width: 150px;
+    height: 40px;
+    background-repeat: no-repeat;
+    margin-top: 5px;
 }
 
 .navbar-brand span {
