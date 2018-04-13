@@ -1,3 +1,4 @@
+@import url('../assets/css/uninett.css');
 @import url('flickity.min.css');
 
 * {
@@ -8,12 +9,16 @@
 
 .nav-override {
     background: #b61924;
-    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    font-family: "colfaxRegular", Helvetica, sans-serif;
 }
 
 .contact-nav-btn {
     border: 1px #fff solid;
     border-radius: 0.3rem;
+}
+
+.nav-link {
+    color: #fff;
 }
 
 .navbar-brand {
@@ -29,6 +34,10 @@
     display: none;
 }
 
+input[type=text] {
+    outline: 0;
+}
+
 .home {
     background: #b61924;
     background-image: url('../assets/img/home.png');
@@ -39,7 +48,7 @@
 .home h1 {
     font-size: 5em;
     color: #fff;
-    font-family: "Circular-Pro-Bold", Helvetica, sans-serif;
+    font-family: "colfaxBold", Helvetica, sans-serif;
     line-height: 1.1em;
     letter-spacing: -3px;
     padding: 2.2em 0 0 0;
@@ -52,12 +61,12 @@
     color: #fff;
     border-radius: 0.3rem;
     font-size: 1.3rem;
-    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    font-family: "colfaxMedium", Helvetica, sans-serif;
     text-decoration: none;
 }
 
 .story h1 {
-    font-family: "Circular-Pro-Bold", Helvetica, sans-serif;
+    font-family: "colfaxBold", Helvetica, sans-serif;
     margin: 0 0 15px 0;
     font-size: 5em;
     letter-spacing: -3px;
@@ -65,7 +74,7 @@
 }
 
 .story h4 {
-    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    font-family: "colfaxRegular", Helvetica, sans-serif;
     font-size: 1.5em;
 }
 
@@ -76,13 +85,13 @@
     color: #fff;
     border-radius: 0.3rem;
     font-size: 1.3rem;
-    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    font-family: "colfaxRegular", Helvetica, sans-serif;
     text-decoration: none;
 }
 
 .section-title {
     color: #f04730;
-    font-family: "Circular-Pro-Bold", Helvetica, sans-serif;
+    font-family: "colfaxBold", Helvetica, sans-serif;
     font-size: 4em;
     letter-spacing: -2px;
     line-height: 1em;
@@ -96,7 +105,7 @@
 }
 
 .section-subtitle {
-    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    font-family: "colfaxRegular", Helvetica, sans-serif;
     font-size: 1.5em;
     line-height: 1.25em;
 }
@@ -112,7 +121,7 @@
 
 .about .section-title {
     color: #b61924;
-    font-family: "Circular-Pro-Bold", Helvetica, sans-serif;
+    font-family: "colfaxBold", Helvetica, sans-serif;
     font-size: 4em;
     letter-spacing: -2px;
     line-height: 1em;
@@ -126,9 +135,10 @@
 }
 
 .about .section-subtitle {
-    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    font-family: "colfaxRegular", Helvetica, sans-serif;
     font-size: 1.5em;
     line-height: 1.25em;
+    width: 500px;
 }
 
 .benefit {
@@ -140,7 +150,7 @@
 
 .benefit .section-title {
     color: #fff;
-    font-family: "Circular-Pro-Bold", Helvetica, sans-serif;
+    font-family: "colfaxBold", Helvetica, sans-serif;
     font-size: 4em;
     letter-spacing: -2px;
     line-height: 1em;
@@ -155,7 +165,7 @@
 
 .benefit .section-subtitle {
     color: #fff;
-    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    font-family: "colfaxRegular", Helvetica, sans-serif;
     font-size: 1.5em;
     line-height: 1.25em;
 }
@@ -171,24 +181,29 @@
     margin-right: 50px;
     background: #fff;
     padding: 2em;
-    border-radius: 5px;
+    border-radius: 7px;
     counter-increment: gallery-cell;
     margin-bottom: 60px;
-    -webkit-box-shadow: 0px 15px 51px 2px rgba(0, 0, 0, 0.34);
-    -moz-box-shadow: 0px 15px 51px 2px rgba(0, 0, 0, 0.34);
-    box-shadow: 0px 15px 51px 2px rgba(0, 0, 0, 0.34);
+    -webkit-box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 3px 0px, rgba(0, 0, 0, 0.12) 0px 1px 7px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -1px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 3px 0px, rgba(0, 0, 0, 0.12) 0px 1px 7px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -1px;
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 3px 0px, rgba(0, 0, 0, 0.12) 0px 1px 7px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -1px;
 }
 
+.flickity-slider {
+    transform: translateX(10.71%);
+}
+
+
 .benefit .carousel-cell h2 {
-    font-family: "Circular-Pro-Bold", Helvetica, sans-serif;
+    font-family: "colfaxBold", Helvetica, sans-serif;
     color: #b61924;
-    font-size: 3em;
+    font-size: 2.5em;
     letter-spacing: -2px;
 }
 
 .benefit .carousel-cell p {
-    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
-    font-size: 1.5em;
+    font-family: "colfaxRegular", Helvetica, sans-serif;
+    font-size: 16px;
     line-height: 1em;
     margin-top: -8px;
 }
@@ -214,7 +229,7 @@
 
 .education .section-title {
     color: #b61924;
-    font-family: "Circular-Pro-Bold", Helvetica, sans-serif;
+    font-family: "colfaxBold", Helvetica, sans-serif;
     font-size: 4em;
     letter-spacing: -2px;
     line-height: 1em;
@@ -228,7 +243,7 @@
 }
 
 .education .section-subtitle {
-    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    font-family: "colfaxRegular", Helvetica, sans-serif;
     font-size: 1.5em;
     line-height: 1.25em;
 }
@@ -244,21 +259,21 @@
     height: auto;
     border-radius: 0.3rem;
     padding: 2em;
-    -webkit-box-shadow: 0px 15px 51px 2px rgba(0, 0, 0, 0.34);
-    -moz-box-shadow: 0px 15px 51px 2px rgba(0, 0, 0, 0.34);
-    box-shadow: 0px 15px 51px 2px rgba(0, 0, 0, 0.34);
+    -webkit-box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 3px 0px, rgba(0, 0, 0, 0.12) 0px 1px 7px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -1px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 3px 0px, rgba(0, 0, 0, 0.12) 0px 1px 7px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -1px;
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 3px 0px, rgba(0, 0, 0, 0.12) 0px 1px 7px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -1px;
 }
 
 .education .explainer h2 {
     color: #212121;
-    font-family: "Circular-Pro-Bold", Helvetica, sans-serif;
+    font-family: "colfaxBold", Helvetica, sans-serif;
     margin-bottom: 10px;
     letter-spacing: -1px;
 }
 
 .education .explainer p {
     color: #212121;
-    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    font-family: "colfaxRegular", Helvetica, sans-serif;
     font-size: 1.05rem;
     line-height: 1.5em;
 }
@@ -271,7 +286,7 @@
 
 .consultancy .section-title {
     color: #fff;
-    font-family: "Circular-Pro-Bold", Helvetica, sans-serif;
+    font-family: "colfaxBold", Helvetica, sans-serif;
     font-size: 4em;
     letter-spacing: -2px;
     line-height: 1em;
@@ -286,17 +301,17 @@
 
 .consultancy .section-subtitle {
     color: #fff;
-    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    font-family: "colfaxRegular", Helvetica, sans-serif;
     font-size: 1.5em;
     line-height: 1.25em;
 }
 
 .consultancy h4 {
-    font-family: "Circular-Pro-Bold", Helvetica, sans-serif;
+    font-family: "colfaxBold", Helvetica, sans-serif;
 }
 
 .consultancy p {
-    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    font-family: "colfaxRegular", Helvetica, sans-serif;
     font-size: 1.05rem;
     line-height: 1.5em;
 }
@@ -313,7 +328,7 @@
 
 .contact .section-title {
     color: #b61924;
-    font-family: "Circular-Pro-Bold", Helvetica, sans-serif;
+    font-family: "colfaxBold", Helvetica, sans-serif;
     font-size: 4em;
     letter-spacing: -2px;
     line-height: 1em;
@@ -327,14 +342,14 @@
 }
 
 .contact .section-subtitle {
-    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    font-family: "colfaxRegular", Helvetica, sans-serif;
     font-size: 1.5em;
     line-height: 1.25em;
 }
 
 .contact input,
 .contact textarea {
-    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    font-family: "colfaxRegular", Helvetica, sans-serif;
     color: #b61924;
     font-size: 1.2rem;
     padding: 1em;
@@ -378,14 +393,14 @@
     color: #fff;
     border-radius: 0.3rem;
     font-size: 1.3rem;
-    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    font-family: "colfaxRegular", Helvetica, sans-serif;
     text-decoration: none;
 }
 
 footer {
     padding: 100px 0 80px 0;
     background: #e0e0e0;
-    font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+    font-family: "colfaxRegular", Helvetica, sans-serif;
     bottom: 0;
     text-align: center;
 }
@@ -536,17 +551,18 @@ footer ul.list-inline li a {
     .about .section-subtitle {
         font-size: 1.1em;
         line-height: 1.25em;
+        width: auto;
     }
     .benefit .section-subtitle {
         font-size: 1.1em;
         line-height: 1.25em;
     }
     .benefit .carousel-cell h2 {
-        font-family: "Circular-Pro-Bold", Helvetica, sans-serif;
+        font-family: "colfaxBold", Helvetica, sans-serif;
         font-size: 2.5em;
     }
     .benefit .carousel-cell p {
-        font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+        font-family: "colfaxRegular", Helvetica, sans-serif;
         font-size: 1.1em;
         line-height: 1em;
         margin-top: -8px;
@@ -633,7 +649,7 @@ footer ul.list-inline li a {
     footer {
         padding: 200px 0 60px 0;
         background: #e0e0e0;
-        font-family: "Circular-Pro-Book", Helvetica, sans-serif;
+        font-family: "colfaxRegular", Helvetica, sans-serif;
         bottom: 0;
         text-align: center;
     }

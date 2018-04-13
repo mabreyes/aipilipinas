@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>ntuit.ai | Home</title>
+    <title>AI Pilipinas &mdash; Home</title>
     <meta name="description" content="Empowering organizations to drive value from Artificial Intelligence. Start your business with us today.">
     <meta name="author" content="ntuit.ai">
     <meta name="keywords" content="ntuit, ntuit.ai, Artificial Intelligence, AI, Business, Organization, Developers, Development, Machine Learning, ML">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="ntuit.ai | Home">
-    <meta property="og:site_name" content="ntuit.ai | Home">
+    <meta property="og:title" content="AI Pilipinas &mdash; Home">
+    <meta property="og:site_name" content="AI Pilipinas &mdash; Home">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://ntuit.ai">
     <meta property="og:image" content="https://ntuit.ai/assets/img/og-image.png">
@@ -24,9 +24,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top nav-override">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top nav-override" style="transition: all 0.2s ease-in;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><span>ntuit.ai</span></a>
+            <a class="navbar-brand" href="#"><span>AI Pilipinas</span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -34,12 +34,12 @@
                 <ul class="navbar-nav mr-auto">
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="nav-item"><a data-scroll href="#about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a data-scroll href="#benefit" class="nav-link">Benefit</a></li>
-                    <li class="nav-item"><a data-scroll href="#education" class="nav-link">Education</a></li>
-                    <li class="nav-item"><a data-scroll href="#consultancy" class="nav-link">Consultancy</a></li>
-                    <li class="nav-item"><a href="https://medium.com/ntuitai" class="nav-link" target="_new">Blog</a></li>
-                    <li class="nav-item"><a data-scroll href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a data-scroll href="#about" class="nav-link" style="color: #fff;">About</a></li>
+                    <li class="nav-item"><a data-scroll href="#benefit" class="nav-link" style="color: #fff;">Benefit</a></li>
+                    <li class="nav-item"><a data-scroll href="#education" class="nav-link" style="color: #fff;">Education</a></li>
+                    <li class="nav-item"><a data-scroll href="#consultancy" class="nav-link" style="color: #fff;">Consultancy</a></li>
+                    <li class="nav-item"><a href="https://medium.com/ntuitai" class="nav-link" target="_new" style="color: #fff;">Blog</a></li>
+                    <li class="nav-item"><a data-scroll href="#contact" class="nav-link" style="color: #fff;">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -47,19 +47,18 @@
     <section class="home">
         <div class="na-wrapper">
             <div class="container-fluid">
-                <h1>Empowering<br>organizations<br>to drive value from<br>Artificial Intelligence</h1>
+                <h1 style="font-family: colfaxBold;">Empowering<br>organizations<br>to drive value from<br>Artificial Intelligence</h1>
                 <a data-scroll href="#about" class="btn">Learn more</a>
             </div>
         </div>
+        <span id="startNavbarChange"></span>
     </section>
     <section class="about" id="about">
         <div class="na-wrapper">
             <div class="container-fluid">
                 <h3 class="section-title">About Us</h3>
                 <div class="section-title-div"></div>
-                <p class="section-subtitle override-margin-bottom">Led by a team of local veterans in the practical
-                    <br>applications of AI, we are the pioneer in providing professional
-                    <br> AI consultancy services in the Philippines</p>
+                <p class="section-subtitle override-margin-bottom">Led by a team of local veterans in the practical applications of AI, we are the pioneer in providing professional AI consultancy services in the Philippines</p>
             </div>
         </div>
     </section>
@@ -178,15 +177,15 @@
                 <div class="row">&nbsp;</div>
                 <div class="row">
                     <div class="form-group col-sm-6">
-                        <input type="text" name="name" class="form-control" id="input-name" placeholder="Name">
+                        <input type="text" name="name" class="form-control" id="input-name" placeholder="Name" required="required">
                     </div>
                     <div class="form-group col-sm-6">
-                        <input type="email" name="email" class="form-control" id="input-email" placeholder="E-mail Address">
+                        <input type="email" name="email" class="form-control" id="input-email" placeholder="E-mail Address" required="required">
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group col-sm-12">
-                        <textarea name="message" class="form-control" id="input-message" rows="5" placeholder="Message"></textarea>
+                        <textarea name="message" class="form-control" id="input-message" rows="5" placeholder="Message" required="required"></textarea>
                     </div>
                 </div>
                 <button type="submit" class="btn btn-light btn-lg">Submit</button>
@@ -197,7 +196,7 @@
         <div class="na-wrapper">
             <div class="container-fluid">
                 <div class="pull-left">
-                    <p>&copy; 2017 ntuit.ai</p>
+                    <p>&copy; 2018 AI Pilipinas</p>
                 </div>
                 <div class="pull-right">
                     <ul class="list-inline social">
@@ -215,6 +214,35 @@
     <script src="assets/form-submission-handler.js"></script>
     <script>
     var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var scroll_start = 0;
+        var startchange = $('#startNavbarChange');
+        var offset = startchange.offset();
+        $(document).scroll(function() {
+            scroll_start = $(this).scrollTop();
+            if (scroll_start > offset.top) {
+                $('.navbar').css('background-color', '#fff');
+                $('.navbar').css('-webkit-box-shadow', '0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2)');
+                $('.navbar').css('-box-box-shadow', '0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2)');
+                $('.navbar').css('box-shadow', '0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2)');
+                $('.nav-link').css('color', '#b61924');
+                $('.navbar-brand').css('background', 'url(assets/img/logo-red.png)');
+                $('.navbar-brand').css('background-repeat', 'no-repeat');
+                $('.scroll-to-top').css('opacity', '1');
+            } else {
+                $('.navbar').css('background-color', '#b61924');
+                $('.navbar').css('-webkit-box-shadow', 'none');
+                $('.navbar').css('-moz-box-shadow', 'none');
+                $('.navbar').css('box-shadow', 'none');
+                $('.nav-link').css('color', '#fff');
+                $('.navbar-brand').css('background', 'url(assets/img/logo.png)');
+                $('.navbar-brand').css('background-repeat', 'no-repeat');
+                $('.scroll-to-top').css('opacity', '0');
+            }
+        });
+    });
     </script>
 </body>
 
